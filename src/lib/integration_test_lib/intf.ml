@@ -264,6 +264,9 @@ module Dsl = struct
          Engine.Network.Node.t
       -> Signature_lib.Public_key.Compressed.t Malleable_error.t
 
+    val priv_key_of_node :
+      Engine.Network.Node.t -> Signature_lib.Private_key.t Malleable_error.t
+
     val check_common_prefixes :
          tolerance:int
       -> logger:Logger.t
